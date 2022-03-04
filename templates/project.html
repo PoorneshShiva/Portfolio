@@ -86,10 +86,10 @@
 
                                 <h1 class="morse_code_title">Encryption</h1>
                                 <div>
-                                    <form  class="form-floating" action="{{url_for('encryption')}}" method="post" >
+                                    <form  class="form-floating" action={{url_for('encryption')}} method="post" >
                                         <textarea class="form-control" id="floatingTextarea" name="encrypted_data" ></textarea>
                                         <label for="floatingTextarea">Encrypted-data</label>
-                                        <input type="submit" value="Submit"  class="btn btn-outline-primary submit_button">
+                                        <input type="submit" value="Submit" onclick="{{url_for('encryption')}}" class="btn btn-outline-primary submit_button">
                                     </form>
                                 </div>
                                 {% if data and not decryption: %}
