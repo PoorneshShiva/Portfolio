@@ -1,0 +1,143 @@
+
+
+
+<html lang="en">
+{% include "header.html" %}
+<body>
+<section class="title_section">
+    <div class="container">
+
+
+        <div class="container container-lg-12 container-md-12 container-sm-12">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                <a class="navbar-brand title" href={{url_for('home')}}><span class="ps">PS</span>Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Content" aria-controls="#Content" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="Content">
+                    <ul class="navbar-nav ms-auto " >
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('home')}}>Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href={{url_for('photography')}}>Photography</a>
+                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href={{url_for('videography')}}>Videography</a>-->
+<!--                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('project')}}>Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link $black" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="container music">
+        <h1 class="music_title">Music</h1>
+        <div class="container music_thought">
+
+
+            <q style="font-size:2.8rem;"><span style="font-size:2.8rem;"> Music can make wonders! How about creating it? </span></q>
+
+
+
+        </div>
+    </div>
+</section>
+<section class="music_list">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+<!--        <div class="accordion-item">-->
+<!--            <h2 class="accordion-header" id="flush-headingOne">-->
+<!--                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">-->
+<!--                    <p class="project_name ms-auto">Yiruma - River Flows in You</p>-->
+<!--                </button>-->
+<!--            </h2>-->
+<!--            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">-->
+<!--                <div class="accordion-body">-->
+<!--                    <iframe width="1280"-->
+<!--                            height="720"-->
+<!--                            src="https://www.youtube.com/embed/qDS5GnTfUvc" title="YouTube video player"-->
+<!--                            frameborder="0"-->
+<!--                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                            allowfullscreen>-->
+
+<!--                    </iframe>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <p class="project_name ms-auto">Titanic - My Heart Will Go On </p>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="container container-lg-12 container-sm-12 container-md-12 justify-content-center">
+                        <iframe class=" ms-auto justify-content-center"
+                                width="100%" height="50%" src="https://www.youtube.com/embed/KAQWzHokZXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <p class="project_name ms-auto">Yiruma - Kiss the Rain </p>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="container">
+                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/IkuqZ8DFDUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<section class="music_contact" id="footer">
+    <div class="container container-lg-12 container-sm-12 container-md-12">
+        <div class="container container-lg-12 container-sm-12 container-md-12 social_footer ">
+            <h1 class="contact_title">Contact Me</h1>
+            <div class="row  row-cols-2 row-cols-lg-4 gx-4 g-lg-4 align-items-start social_row">
+                <div class="col">
+                    <a class="social" href="https://www.linkedin.com/in/poornesh-shiva-9529a0215/"> <i class="fa fa-brands fa-linkedin fa-3x "></i></a><br>
+                    <p class="social_name">Linkedin</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="https://github.com/PoorneshShiva"><i class="fa fa-brands fa-github fa-3x "></i></a><br>
+                    <p class="social_name">Github</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="https://twitter.com/2strokelover46"><i class="fa fa-brands fa-twitter-square fa-3x "></i></a><br>
+                    <p class="social_name">Twitter</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="mailto:poorneshshiva@gmail.com"><i class="fa fa-solid fa-envelope fa-3x"></i></a>
+                    <br>
+                    <p class="social_name">Mail</p>
+                </div>
+
+            </div>
+
+            <p class="copyright">© Copyright 2021 PsPortfolio</p>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

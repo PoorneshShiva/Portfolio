@@ -1,0 +1,182 @@
+
+
+
+<html lang="en">
+{% include "header.html" %}
+<body>
+<section class="title_section">
+    <div class="container">
+
+
+        <div class="container-fluid">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                <a class="navbar-brand title" href={{url_for('home')}}><span class="ps">PS</span>Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Content" aria-controls="#Content" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="Content">
+                    <ul class="navbar-nav ms-auto ms-2 " >
+
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('photography')}}>Photography</a>
+                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href={{url_for('videography')}}>Videography</a>-->
+<!--                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('music')}}>Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('project')}}>Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link $black" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <div class="container title_body container-sm-12 container-md-12">
+        <div class="container-lg-12 container-sm-12 container-md-12 title_main_container">
+            <img src="static/images/71774192_239688280333066_1180986984482383363_n-modified.png" class="rounded mx-auto d-block ppic" alt="...">
+            <div class="container-lg-12 container-sm-12 container-md-12 about">
+                <h3 class="name">Poornesh Shiva</h3>
+                <p class="subtitle"><strong> a Software Developer</strong></p>
+
+                <p class="about_me">He was born in <a target="_blank" href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/@11.0117096,76.967235,12z/data=!3m1!4b1!4m5!3m4!1s0x3ba859af2f971cb5:0x2fc1c81e183ed282!8m2!3d11.0168445!4d76.9558321">Coimbatore, India,</a> and grew up in
+                    <a target="_blank" href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9533985,77.0704587,9z/data=!3m1!4b1!4m5!3m4!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627">Bangalore, India</a>. He is a Computer Science graduate student. Few among his skills are <span class="subtitle">PhotoGraphy</span>, <span class="subtitle">VideoGraphy</span>,
+                    <span class="subtitle">Music</span> and <span class="subtitle">Advanced Python</span>. If you love any of these as he does. Make sure to contact him.</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section class="gallery">
+    <div class="container container-lg-6 container-md-6 container-sm-12">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="static/images/adam-rhodes-wGTucwd909o-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Capturing Photo</h5>
+                        <p class="card-text fs-5" >I will Update Mine Soon!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="static/images/victor-rutka-1zfqWQdSHUc-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Capturing Video</h5>
+                        <p class="card-text fs-5">I will Update Mine Soon!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="static/images/lijo-joseph-saSAJ3zoTCI-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Hands on the Piano!</h5>
+                        <p class="card-text fs-5">I will update mine soon!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="static/images/computer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Hands on the Computer!</h5>
+                        <p class="card-text fs-5">I will Update Mine Soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="motivation">
+    <div class="container-lg-12 container-sm-12 container-md-12">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner container-lg-12 container-sm-12 container-md-12 motivation_main_container">
+                <h1 class="thought_title">Thought's which would make you motivated!</h1>
+
+                <div class="carousel-item  container-lg-12 container-sm-12 container-md-12 active">
+
+                    <div class="container-lg-12 container-sm-12 container-md-12 thoughts_container">
+
+                        <img src="static/images/napoleon-hill.jpg" class="d-block motivation_image" alt="hello">
+                        <p class="author">  Napoleon Hill </p>
+                        <h3 class="thoughts">Tell the World what you intend to do, but first show it.</h3>
+                        <br>
+
+                    </div>
+                </div>
+                <div class="carousel-item container-lg-12 container-sm-12 container-md-12">
+                    <div class="container-lg-12 container-sm-12 container-md-12 thoughts_container">
+                        <img src="static/images/Robin-Sharma-Quotes-.jpg" class="d-block motivation_image" alt="hello">
+                        <p class="author"> Robin Sharma </p>
+                        <h3 class="thoughts">The duty of every Human-Being is not self-improvement but self remembering</h3>
+                        <br>
+
+                        <!--                <img src="static/images/hello-i-m-nik-z1d-LP8sjuI-unsplash.jpg" class="d-block w-100 motivation_image" alt="...">-->
+                    </div>
+                </div>
+                <div class="carousel-item container-lg-12 container-sm-12 container-md-12">
+                    <div class="container-lg-12 container-sm-12 container-md-12 thoughts_container">
+                        <img src="static/images/sadhguru1.width-1024.jpg" class="d-block motivation_image" alt="hello">
+                        <p class="author"> Sadguru </p>
+                        <h3 class="thoughts">Karma is not some external system of crime and punishment</h3>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden c_button">Previous</span>
+            </button>
+            <button class="carousel-control-next  " type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon c_button "></span>
+                <span class="visually-hidden ">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="contact" id="footer">
+    <div class="container container-lg-12 container-sm-12 container-md-12">
+        <div class="container container-lg-12 container-sm-12 container-md-12 social_footer ">
+            <h1 class="contact_title">Contact Me</h1>
+            <div class="row  row-cols-2 row-cols-lg-4 gx-4 g-lg-4 align-items-start social_row">
+                <div class="col">
+                    <a class="social" href="https://www.linkedin.com/in/poornesh-shiva-9529a0215/"> <i class="fa fa-brands fa-linkedin fa-3x "></i></a><br>
+                    <p class="index_social_name">Linkedin</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="https://github.com/PoorneshShiva"><i class="fa fa-brands fa-github fa-3x "></i></a><br>
+                    <p class="index_social_name">Github</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="https://twitter.com/2strokelover46"><i class="fa fa-brands fa-twitter-square fa-3x "></i></a><br>
+                    <p class="index_social_name">Twitter</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="mailto:poorneshshiva@gmail.com"><i class="fa fa-solid fa-envelope fa-3x"></i></a>
+                    <br>
+                    <p class="index_social_name">Mail</p>
+                </div>
+
+            </div>
+
+            <p class="copyright">© Copyright 2021 PsPortfolio</p>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

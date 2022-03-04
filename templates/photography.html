@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PSPhotography</title>
+    {% include "header.html" %}
+</head>
+<body>
+<section class="title_section">
+    <div class="container-lg">
+
+
+        <div class="container-lg">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                <a class="navbar-brand title" href={{url_for('home')}}><span class="ps">PS</span>Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Content" aria-controls="#Content" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="Content">
+                    <ul class="navbar-nav ms-auto me-0" >
+                        <li class="nav-item ">
+                            <a class="nav-link" href={{url_for('home')}}>Home</a>
+                        </li>
+
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href={{url_for('videography')}}>Videography</a>-->
+<!--                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('music')}}>Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href={{url_for('project')}}>Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link $black" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container photography">
+        <h1 class="photography_title" >Photography</h1>
+        <div class="container photography_thought">
+
+
+            <q style="font-size:2.8rem;"><span style="font-size:2.8rem;"> Capture with the Patience, and Explore with the Nations! </span></q>
+
+
+        </div>
+    </div>
+
+</section>
+<section class="photography_section">
+
+    <div class="container-lg photo_gallery_container">
+        <div class="row photo_gallery_row">
+            <!--            <div class="col col-lg-6">-->
+            <!--                <figure class="figure img-color">-->
+            <!--                    <img alt="..." class="figure-img img-fluid rounded"-->
+            <!--                         src="https://images.unsplash.com/photo-1646063318003-ff5377b4d706?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">-->
+            <!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
+            <!--                </figure>-->
+            <!--            </div>-->
+            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12">
+                <figure class="figure img-color">
+                    <img alt="..." class="figure-img img-fluid rounded"
+                         src="https://images.unsplash.com/photo-1528033891155-8bfa0f94c5b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
+
+            </div>
+            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12 ">
+                <figure class="figure img-color">
+                    <img alt="..." class="figure-img img-fluid rounded"
+                         src="https://images.unsplash.com/photo-1582549023823-b5984434f8f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12 ">
+                <figure class="figure img-color">
+                    <img alt="..." class="figure-img img-fluid rounded"
+                         src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
+                <figure class="figure img-color">
+                    <img alt="..." class="figure-img img-fluid rounded"
+                         src="https://images.unsplash.com/photo-1624554305378-0f440dd3a8c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1425&q=80">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="photography_contact" id="footer">
+    <div class="container container-lg-12 container-sm-12 container-md-12">
+        <div class="container container-lg-12 container-sm-12 container-md-12 social_footer ">
+            <h1 class="contact_title">Contact Me</h1>
+            <div class="row  row-cols-2 row-cols-lg-4 gx-4 g-lg-4 align-items-start social_row">
+                <div class="col">
+                    <a class="social" href="https://www.linkedin.com/in/poornesh-shiva-9529a0215/"> <i class="fa fa-brands fa-linkedin fa-3x "></i></a><br>
+                    <p class="social_name">Linkedin</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="https://github.com/PoorneshShiva"><i class="fa fa-brands fa-github fa-3x "></i></a><br>
+                    <p class="social_name">Github</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="https://twitter.com/2strokelover46"><i class="fa fa-brands fa-twitter-square fa-3x "></i></a><br>
+                    <p class="social_name">Twitter</p>
+                </div>
+                <div class="col">
+                    <a class="social" href="mailto:poorneshshiva@gmail.com"><i class="fa fa-solid fa-envelope fa-3x"></i></a>
+                    <br>
+                    <p class="social_name">Mail</p>
+                </div>
+
+            </div>
+
+            <p class="copyright">© Copyright 2021 PsPortfolio</p>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

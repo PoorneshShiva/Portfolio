@@ -1,0 +1,291 @@
+h3{
+font-family: 'Teko', sans-serif;
+font-size: 3rem;
+}
+p{
+font-family: 'Itim', cursive;
+font-size: 2.5rem;
+}
+a{
+color:#FC4F4F;
+}
+
+
+
+/* All the Classes */
+
+/* Title*/
+.ps{
+font-family: 'Leckerli One', cursive;
+color:#FC4F4F;
+}
+.title{
+font-family: 'Suez One', serif;
+font-size: 3.5rem;
+}
+.title_body{
+margin:7rem auto;
+font-family: 'Acme', sans-serif;
+position:relative;
+}
+.title_section{
+background:#FF9F45;
+
+z-index:1;
+padding:2% 0 7%;
+margin-bottom:2rem;
+
+}
+
+/* Profile */
+.image_container{
+margin:0 9rem;
+}
+.ppic{
+padding:1rem 0.5rem 0 0 ;
+width:19rem;
+float:left;
+}
+
+
+
+
+
+.name{
+font-family: 'Suez One', serif;
+padding:10px 0 0 0px;
+text-align:left;
+margin:1rem 0 0 0;
+font-size:3rem;
+}
+.subtitle{
+text-align:left;
+color:#FC4F4F;
+
+white-space: pre;
+
+
+}
+.about{
+margin:2% 0 0 10%;
+}
+
+.about_me{
+font-size:2rem;
+text-align:left;
+position:relative;
+
+}
+/*Navbar*/
+
+.nav-item{
+font-size:1.3rem;
+font-family: 'Acme', sans-serif;
+position:relative;
+display:inherit;
+}
+
+.navbar-light .navbar-nav .nav-link{
+color:black;
+font-size:1.6rem;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover{
+color:#FC4F4F;
+}
+
+/* section Gallery */
+.gallery{
+padding:4rem 0 10rem 0;
+
+}
+
+
+/* Photography */
+
+,.project_title,.project_title,.videography_title,.music_title,{
+padding:4rem 0 1rem;
+position:relative;
+
+text-align:center;
+margin:1rem 1rem 0 0rem;
+font-family: 'Acme', sans-serif;
+
+}
+.photography ,.videography, .project, .music{
+text-align:center;
+}
+
+.photography_thought,.music_thought,.videography_thought,.project_thought {
+text-align:center;
+
+}
+.ldouble-quote{
+position:absolute;
+right:100%;
+
+}
+/* photography_title{
+display:inline-block;
+text-align:center;
+padding: 0 auto;
+font-size:10rem;
+
+
+}*/
+
+.title_main_container{
+padding-bottom:1rem;
+}
+
+
+.photo_gallery_container{
+margin:5rem auto;
+}
+
+.motivation, .music_contact, .photography_contact,.videography_contact, .project_contact{
+background:#FC4F4F;
+margin:5% auto 0 ;
+padding:4rem 0 0 ;
+}
+.motivation_image{
+width:12rem;
+border-radius: 55px;
+margin:auto;
+position:relative;
+
+}
+
+.thoughts{
+text-align:center;
+font-family: 'Itim', cursive;
+display:inline;
+font-size:3rem;
+}
+.author{
+text-align:center;
+color:inherit;
+font-size:2rem;
+
+
+}
+.thought_title{
+padding-bottom:5%;
+
+font-family: 'Acme', sans-serif;
+font-size:4rem;
+display:block;
+position:relative;
+text-align:center;
+font-weight:800;
+color:white;
+
+}
+
+.thoughts_container{
+
+text-align:center;
+position:relative;
+
+
+}
+
+.motivation_main_container{
+text-align:center;
+padding:6%;
+margin-bottom:5%;
+}
+
+
+.carousel-control-next-icon{
+
+color:black;
+}
+
+
+.music_title, .photography_title, .project_title{
+font-size:7rem;
+font-weight:600;
+}
+/*  Footer */
+
+.social_footer{
+padding:6%;
+text-align:center;
+}
+
+.social{
+padding:5% 0 2%;
+text-align:center;
+color:inherit;
+}
+.index_social_name{
+color:#FC4F4F;
+font-size:1.5rem;
+padding-bottom:20%;
+display:inline-block;
+}
+
+.social:hover{
+color:skyblue;
+}
+
+.contact_title{
+padding-bottom:5%;
+font-family: 'Acme', sans-serif;
+font-size:5rem;
+display:block;
+position:relative;
+text-align:center;
+
+}
+.social_name{
+font-size:1.5rem;
+display:inline-block;
+color:#black;
+padding-bottom:20%;
+}
+.social_row{
+text-align:center;
+}
+.copyright{
+font-size:1rem;
+}
+
+
+
+
+
+/* Project */
+
+.morse_code_title{
+text-align:center;
+font-size:5rem;
+display:block;
+}
+
+.submit_button{
+text-align:center;
+display:block;
+margin:1rem auto;
+}
+
+
+
+
+@media (max-width:780px){
+.ppic{
+margin-left:4%;
+text-align:center;
+float:none;
+}
+.name{
+text-align:center;
+
+
+}
+.subtitle{
+text-align:center;
+
+}
+}
