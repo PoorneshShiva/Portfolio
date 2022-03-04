@@ -89,16 +89,16 @@
                                     <form  class="form-floating" action={{url_for('encryption')}} method="post" >
                                         <textarea class="form-control" id="floatingTextarea" name="encrypted_data" ></textarea>
                                         <label for="floatingTextarea">Encrypted-data</label>
-                                        <button type="submit" value="Submit" onclick="{{url_for('encryption')}}" class="btn btn-outline-primary submit_button">Sub</button>
+                                        <button type="submit" value="Submit" onclick="{{url_for('encryption')}}" class="btn btn-outline-primary submit_button">Submit</button>
                                     </form>
                                 </div>
                                 {% if data and not decryption: %}
                                 <div class="alert alert-success" role="alert">
-                                    Encrypted-Data is copied to your clipboard : {{data}}
+                                    Encrypted-Data is : {{data}}
                                 </div>
                                 {% elif data and decryption: %}
                                 <div class="alert alert-success" role="alert">
-                                    Decrypted-Data is copied to your clipboard : {{data}}
+                                    Decrypted-Data is : {{data}}
                                 </div>
                                 {% endif %}
                             </div>
