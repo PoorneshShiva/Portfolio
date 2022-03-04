@@ -17,7 +17,7 @@ def encryption_to_morse(word):
     for letter in word.upper():
         new_letter = ENGLISH_TO_MORSE[letter]
         ENCRYPTION_MESSAGE += new_letter + "/"
-    pyperclip.copy(ENCRYPTION_MESSAGE)
+
     return ENCRYPTION_MESSAGE
 
 
@@ -31,16 +31,13 @@ def decryption_to_english(word):
         if each in values:
             decrypt_letter = keys[values.index(each)]
             DECRYPTED_MESSAGE += decrypt_letter
-        pyperclip.copy(DECRYPTED_MESSAGE)
+
     return DECRYPTED_MESSAGE.title()
 
 
-# Printing the Banner!
-print(banner)
-
-
 def main():
-    #
+    # Printing the Banner!
+    print(banner)
     # Asking the User to enter the requirements.
     choice = input('Do you want to encode(e), decode(d), or quit(q)?:').lower()
     if choice == "e":
