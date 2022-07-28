@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, url_for, flash, get_flashed_messages
 from flask_bootstrap import Bootstrap
 from morse import encryption_to_morse, decryption_to_english
+import os
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get("SECRETKEY")
 Bootstrap(app)
 
 
