@@ -29,7 +29,8 @@ font-family: 'Acme', sans-serif;
 position:relative;
 }
 .title_section{
-background:#FF9F45;
+background: rgb(34,193,195);
+background: linear-gradient(332deg, rgba(34,193,195,1) 43%, rgba(253,187,45,1) 100%);
 
 z-index:1;
 padding:2% 0 7%;
@@ -144,7 +145,8 @@ margin:5rem auto;
 }
 
 .motivation, .music_contact, .photography_contact,.videography_contact, .project_contact{
-background:#FC4F4F;
+background: rgb(63,251,246);
+background: linear-gradient(0deg, rgba(63,251,246,1) 0%, rgba(252,70,70,1) 72%);
 margin:5% auto 0 ;
 padding:4rem 0 0 ;
 }
