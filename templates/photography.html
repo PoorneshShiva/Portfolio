@@ -13,6 +13,7 @@
         <div class="container-lg">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <a class="navbar-brand title" href={{url_for('home')}}><span class="ps">PS</span>Portfolio</a>
+                <button class="dark-mode-btn" onclick="darkmode()"><i class="fa fa-moon-o fa-3x" id="dark-mode-icon" aria-hidden="true"></i></button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#Content" aria-controls="#Content" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -57,7 +58,7 @@
     </div>
 
 </section>
-<section class="photography_section">
+<section class="photography_section darkmode-section" id="photography_id">
 
     <div class="container-lg photo_gallery_container">
         <div class="row photo_gallery_row">
@@ -69,7 +70,7 @@
             <!--                </figure>-->
             <!--            </div>-->
             <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12">
-                <figure class="figure img-color">
+                <figure class="figure img-color" onmouseover="fun()">
                     <img alt="..." class="figure-img img-fluid rounded"
                          src="https://images.unsplash.com/photo-1528033891155-8bfa0f94c5b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
                     <figcaption class="figure-caption">A caption for the above image.</figcaption>
@@ -90,7 +91,7 @@
                     <figcaption class="figure-caption">A caption for the above image.</figcaption>
                 </figure>
             </div>
-            <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
+            <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                 <figure class="figure img-color">
                     <img alt="..." class="figure-img img-fluid rounded"
                          src="https://images.unsplash.com/photo-1624554305378-0f440dd3a8c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1425&q=80">
@@ -131,5 +132,6 @@
     </div>
 
 </section>
+<script src="{{url_for('static',filename='script/index.js')}}" charset="utf-8"></script>
 </body>
 </html>

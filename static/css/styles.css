@@ -34,9 +34,11 @@ background: linear-gradient(332deg, rgba(34,193,195,1) 43%, rgba(253,187,45,1) 1
 
 z-index:1;
 padding:2% 0 7%;
-margin-bottom:2rem;
+
 
 }
+
+
 
 /* Profile */
 .image_container{
@@ -94,13 +96,19 @@ font-size:1.6rem;
 .navbar-light:hover .navbar-nav:hover .nav-link:hover{
 color:#FC4F4F;
 }
-
+.dark-mode-btn{
+background-color: transparent;
+border:none;
+}
 /* section Gallery */
 .gallery{
-padding:4rem 0 10rem 0;
+padding:4rem 2 10rem 0;
 
 }
 
+.darkmode{
+background:#575757;
+}
 
 /* Photography */
 
@@ -121,6 +129,27 @@ text-align:center;
 text-align:center;
 
 }
+.esha_image{
+background: url("../images/Photography_of_mine.jpg") no-repeat;
+}
+.esha_image:hover{
+background: url("../images/Esha.png") no-repeat;
+
+
+}
+/*
+.card:hover {
+transform:scale(1.2);
+z-index:2;
+}
+.figure:hover {
+
+transform:scale(1.8);
+z-index:2;
+}
+*/
+
+
 .ldouble-quote{
 position:absolute;
 right:100%;
@@ -147,8 +176,8 @@ margin:5rem auto;
 .motivation, .music_contact, .photography_contact,.videography_contact, .project_contact{
 background: rgb(63,251,246);
 background: linear-gradient(0deg, rgba(63,251,246,1) 0%, rgba(252,70,70,1) 72%);
-margin:5% auto 0 ;
-padding:4rem 0 0 ;
+margin:0% auto 0 ;
+padding:4rem 5% 0 0 ;
 }
 .motivation_image{
 width:12rem;
@@ -194,8 +223,8 @@ position:relative;
 
 .motivation_main_container{
 text-align:center;
-padding:6%;
-margin-bottom:5%;
+padding:6% 0 6% 5%;
+
 }
 
 
@@ -272,6 +301,16 @@ display:block;
 margin:1rem auto;
 }
 
+#myname{
+opacity:1;
+transition: all 1s ease;
+transform:tranlateY(50px);
+}
+
+#myname.fade{
+opacity:1;
+transform:tranlateY(0px);
+}
 
 
 

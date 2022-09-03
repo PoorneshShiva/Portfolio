@@ -1,6 +1,3 @@
-
-
-
 <html lang="en">
 {% include "header.html" %}
 <body>
@@ -16,17 +13,17 @@
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse"  id="Content">
-                    <ul class="navbar-nav ms-auto me-0" >
+                <div class="collapse navbar-collapse" id="Content">
+                    <ul class="navbar-nav ms-auto me-0">
                         <li class="nav-item">
                             <a class="nav-link" href={{url_for('home')}}>Home</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href={{url_for('photography')}}>Photography</a>
                         </li>
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" href={{url_for('videography')}}>Videography</a>-->
-<!--                        </li>-->
+                        <!--                        <li class="nav-item">-->
+                        <!--                            <a class="nav-link" href={{url_for('videography')}}>Videography</a>-->
+                        <!--                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href={{url_for('music')}}>Music</a>
                         </li>
@@ -49,7 +46,6 @@
             <q style="font-size:2.8rem;"><span style="font-size:2.8rem;"> Knowledge needs to be in a perfect place to create wonders! </span></q>
 
 
-
         </div>
     </div>
 
@@ -59,21 +55,25 @@
     <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item ">
             <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     <p class="project_name ms-auto">Encryption and Decryption of MorseCode using Python</p>
                 </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
 
                     <nav>
                         <div class="nav nav-pills nav-tabs justify-content-center" id="nav-tab" role="tablist">
                             <button class="nav-link active  fs-3" id="nav-encryption-tab" data-bs-toggle="tab"
-                                    aria-controls="nav-encryption" data-bs-target="#nav-encryption" type="button" role="tab" aria-selected="true">
+                                    aria-controls="nav-encryption" data-bs-target="#nav-encryption" type="button"
+                                    role="tab" aria-selected="true">
                                 Encryption
                             </button>
                             <button class="nav-link fs-3" id="nav-decryption-tab" data-bs-toggle="tab"
-                                    aria-controls="nav-decryption" data-bs-target="#nav-decryption" type="button" role="tab" aria-selected="false">
+                                    aria-controls="nav-decryption" data-bs-target="#nav-decryption" type="button"
+                                    role="tab" aria-selected="false">
                                 Decryption
                             </button>
                         </div>
@@ -86,10 +86,13 @@
 
                                 <h1 class="morse_code_title">Encryption</h1>
                                 <div>
-                                    <form  class="form-floating" action={{url_for('encryption')}} method="post" >
-                                        <textarea class="form-control" id="floatingTextarea" name="encrypted_data" ></textarea>
+                                    <form class="form-floating" action={{url_for('encryption')}} method="post">
+                                        <textarea class="form-control" id="floatingTextarea"
+                                                  name="encrypted_data"></textarea>
                                         <label for="floatingTextarea">Encrypted-data</label>
-                                        <button type="submit" value="Submit" onclick="{{url_for('encryption')}}" class="btn btn-outline-primary submit_button">Submit</button>
+                                        <button type="submit" value="Submit" onclick="{{url_for('encryption')}}"
+                                                class="btn btn-outline-primary submit_button">Submit
+                                        </button>
                                     </form>
                                 </div>
                                 {% if data and not decryption: %}
@@ -108,10 +111,12 @@
                             <div class="container container-lg-12 container-sm-12 container-md-12">
                                 <h1 class="morse_code_title">Decryption</h1>
                                 <div class="container">
-                                    <form class="form-floating"  action="{{url_for('decryption')}}" method="Post">
-                                        <textarea class="form-control" id="floatingTextarea1" name="decrypted_data"></textarea>
+                                    <form class="form-floating" action="{{url_for('decryption')}}" method="Post">
+                                        <textarea class="form-control" id="floatingTextarea1"
+                                                  name="decrypted_data"></textarea>
                                         <label for="floatingTextarea1">Decrypted-data</label>
-                                        <input type="submit" value="Submit" name="decrypted_data" class="btn btn-outline-primary submit_button">
+                                        <input type="submit" value="Submit" name="decrypted_data"
+                                               class="btn btn-outline-primary submit_button">
                                     </form>
                                 </div>
                             </div>
@@ -121,26 +126,68 @@
                 </div>
             </div>
         </div>
-<!--        <div class="accordion-item">-->
-<!--            <h2 class="accordion-header" id="flush-headingTwo">-->
-<!--                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">-->
-<!--                    <p class="project_name ms-auto">Encryption and Decryption of MorseCode using Python</p>-->
-<!--                </button>-->
-<!--            </h2>-->
-<!--            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">-->
-<!--                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="accordion-item">-->
-<!--            <h2 class="accordion-header" id="flush-headingThree">-->
-<!--                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">-->
-<!--                    <p class="project_name ms-auto">Encryption and Decryption of MorseCode using Python</p>-->
-<!--                </button>-->
-<!--            </h2>-->
-<!--            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">-->
-<!--                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <p class="project_name ms-auto">Type testing offline using python</p>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" style="text-align:center; margin:0 10rem 10rem;">
+
+                    <div class="card mb-3" style="margin-bottom:3rem;">
+                        <img src="static/images/testing1.jpg" class="card-img-top" alt="Project image 1">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size:2.3rem; color:#2670D1;">Typing Initial
+                                Layout </h5>
+                            <p class="card-text" style="font-size:1.4rem;">The Typing Exercise with the random array
+                                of
+                                sentences.</p>
+
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="static/images/typing2.jpg" class="card-img-bottom" alt="Project image 2">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size:2.3rem; color:#2670D1;">Typing Final Layout</h5>
+                            <p class="card-text" style="font-size:1.4rem;">Shorty after clicking start, Timer starts
+                                for
+                                a min and
+                                provides
+                                result in a minute</p>
+
+                        </div>
+
+                    </div>
+                    <a style="text-decoration:none;font-size:3rem;"
+                       href="https://github.com/PoorneshShiva/Typing_Test">
+                        <i class="fa fa-download fa-3" aria-hidden="true"></i> Git-Hub Page to download
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                <p class="project_name ms-auto">Cafe Website with Python and Database</p>
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+             data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" style="text-align:center;"><a style="text-decoration:none;font-size:3rem;"
+                                                                      href="https://venturecafe.herokuapp.com/location">
+                Internet-friendly Cafe in Indian Cities.
+            </a>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 <section class="project_contact" id="footer">
@@ -149,19 +196,23 @@
             <h1 class="contact_title">Contact Me</h1>
             <div class="row  row-cols-2 row-cols-lg-4 gx-4 g-lg-4 align-items-start social_row">
                 <div class="col">
-                    <a class="social" href="https://www.linkedin.com/in/poornesh-shiva-9529a0215/"> <i class="fa fa-brands fa-linkedin fa-3x "></i></a><br>
+                    <a class="social" href="https://www.linkedin.com/in/poornesh-shiva-9529a0215/"> <i
+                            class="fa fa-brands fa-linkedin fa-3x "></i></a><br>
                     <p class="social_name">Linkedin</p>
                 </div>
                 <div class="col">
-                    <a class="social" href="https://github.com/PoorneshShiva"><i class="fa fa-brands fa-github fa-3x "></i></a><br>
+                    <a class="social" href="https://github.com/PoorneshShiva"><i
+                            class="fa fa-brands fa-github fa-3x "></i></a><br>
                     <p class="social_name">Github</p>
                 </div>
                 <div class="col">
-                    <a class="social" href="https://twitter.com/2strokelover46"><i class="fa fa-brands fa-twitter-square fa-3x "></i></a><br>
+                    <a class="social" href="https://twitter.com/2strokelover46"><i
+                            class="fa fa-brands fa-twitter-square fa-3x "></i></a><br>
                     <p class="social_name">Twitter</p>
                 </div>
                 <div class="col">
-                    <a class="social" href="mailto:poorneshshiva@gmail.com"><i class="fa fa-solid fa-envelope fa-3x"></i></a>
+                    <a class="social" href="mailto:poorneshshiva@gmail.com"><i
+                            class="fa fa-solid fa-envelope fa-3x"></i></a>
                     <br>
                     <p class="social_name">Mail</p>
                 </div>
