@@ -13,6 +13,11 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/certificates', methods=["POST", "GET"])
+def certificates():
+    return render_template('certificates.html')
+
+
 @app.route('/photography', methods=["POST", "GET"])
 def photography():
     return render_template('photography.html')
@@ -59,4 +64,4 @@ def encryption():
 
 
 if __name__ == "__main__":
-    app.run(debug=True,host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0")
