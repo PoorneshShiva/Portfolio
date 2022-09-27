@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, url_for, flash, get_flashed_m
 from flask_bootstrap import Bootstrap
 from morse import encryption_to_morse, decryption_to_english
 import os
+from source import homepage_gallery, books_knowledge
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRETKEY")
@@ -10,7 +12,7 @@ Bootstrap(app)
 
 @app.route('/', methods=["POST", "GET"])
 def home():
-    return render_template('index.html')
+    return render_template('index.html', homepage_gallery=homepage_gallery, books=books_knowledge)
 
 
 @app.route('/certificates', methods=["POST", "GET"])
