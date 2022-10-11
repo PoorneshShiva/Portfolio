@@ -69,35 +69,38 @@
             <!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
             <!--                </figure>-->
             <!--            </div>-->
+            {% for each in gallary %}
             <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12">
-                <figure class="figure img-color" onmouseover="fun()">
-                    <img alt="..." class="figure-img img-fluid rounded"
-                         src="https://images.unsplash.com/photo-1528033891155-8bfa0f94c5b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                <a href='{{each["link"]}}'>
+               <figure class="figure img-color" onclick="">
+                    <img  alt="..." class="figure-img img-fluid rounded"
+                         src={{each["link"]}}>
+                    <figcaption style="text-align:center;font-size:24px;" class="figure-caption">{{each["caption"]}}.</figcaption>
                 </figure>
-
+</a>
             </div>
-            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12 ">
-                <figure class="figure img-color">
-                    <img alt="..." class="figure-img img-fluid rounded"
-                         src="https://images.unsplash.com/photo-1582549023823-b5984434f8f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
-            </div>
-            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12 ">
-                <figure class="figure img-color">
-                    <img alt="..." class="figure-img img-fluid rounded"
-                         src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
-            </div>
-            <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                <figure class="figure img-color">
-                    <img alt="..." class="figure-img img-fluid rounded"
-                         src="https://images.unsplash.com/photo-1624554305378-0f440dd3a8c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1425&q=80">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
-            </div>
+            {% endfor %}
+<!--            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12 ">-->
+<!--                <figure class="figure img-color">-->
+<!--                    <img alt="..." class="figure-img img-fluid rounded"-->
+<!--                         src="https://images.unsplash.com/photo-1582549023823-b5984434f8f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80">-->
+<!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--            <div class="col col-lg-6  col-md-6 col-sm-12 col-xs-12 ">-->
+<!--                <figure class="figure img-color">-->
+<!--                    <img alt="..." class="figure-img img-fluid rounded"-->
+<!--                         src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">-->
+<!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--            <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 ">-->
+<!--                <figure class="figure img-color">-->
+<!--                    <img alt="..." class="figure-img img-fluid rounded"-->
+<!--                         src="https://images.unsplash.com/photo-1624554305378-0f440dd3a8c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1425&q=80">-->
+<!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
+<!--                </figure>-->
+<!--            </div>-->
 
         </div>
     </div>
