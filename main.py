@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for, flash, get_flashed_m
 from flask_bootstrap import Bootstrap
 from morse import encryption_to_morse, decryption_to_english
 import os
-from source import homepage_gallery, books_knowledge
+from source import homepage_gallery, books_knowledge, photography_gallary
 
 
 app = Flask(__name__)
@@ -22,7 +22,7 @@ def certificates():
 
 @app.route('/photography', methods=["POST", "GET"])
 def photography():
-    return render_template('photography.html')
+    return render_template('photography.html', gallary=photography_gallary)
 
 
 @app.route('/videography', methods=["POST", "GET"])
