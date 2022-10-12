@@ -1,9 +1,9 @@
 homepage_gallery = [{"link": "static/images/Photography_of_mine.jpg", "Heading": "Capturing Photo",
                      "Paragraph": "Esha in Coimbatore,India"},
-                    {"link": "static/images/victor-rutka-1zfqWQdSHUc-unsplash.jpg", "Heading": "Capturing Video",
-                     "Paragraph": "I will Update Mine Soon!"},
                     {"link": "static/images/lijo-joseph-saSAJ3zoTCI-unsplash.jpg", "Heading": "Hands on the Piano!",
                      "Paragraph": "I will Update Mine Soon!"},
+                    {"link": "https://images.unsplash.com/photo-1665486878603-f33153f45206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=657&q=80", "Heading": "Capturing Video",
+                     "Paragraph": "Capturing Video for a short movie."},
                     {"link": "static/images/computer.jpg", "Heading": "Hands on my Computer!",
                      "Paragraph": "I will Update Mine Soon!"}]
 
@@ -21,6 +21,8 @@ photography_gallary = [
     {'caption': 'Hill station Koddaikannal, Tamilnadu', 'link': 'https://images.unsplash.com/photo-1665481194192-f7067c3b8a80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'},
     {'caption': 'Dindugul-Kodaikannal,TamilNadu', 'link': 'https://images.unsplash.com/photo-1665481327746-8f05f77a88a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'},
     {'caption': 'Isha Coimbatore,Tamilnadu', 'link': 'https://images.unsplash.com/photo-1665481485518-c693644d6f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'},
-    {'caption': 'Resort Kodaikannal, TamilNadu', 'link': 'https://images.unsplash.com/photo-1665481312388-2de69b25cec8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'}]
+    {'caption': 'Resort Kodaikannal, TamilNadu', 'link': 'https://images.unsplash.com/photo-1665481312388-2de69b25cec8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'},
+{'caption': 'Church Kodaikannal, TamilNadu', 'link': 'https://images.unsplash.com/photo-1665488139936-379085c64506?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'}
+]
 
 # "https://images.unsplash.com/photo-1665481193520-86e5eaba1af6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
