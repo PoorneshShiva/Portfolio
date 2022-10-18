@@ -48,6 +48,7 @@ padding:2% 0 7%;
 margin:0 9rem;
 }
 .ppic{
+filter:drop-shadow(-9px 15px 15px);
 padding:1rem 0.5rem 0 0 ;
 width:19rem;
 float:left;
