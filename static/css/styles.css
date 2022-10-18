@@ -1,3 +1,4 @@
+
 h3{
 font-family: 'Teko', sans-serif;
 font-size: 3rem;
@@ -8,6 +9,7 @@ font-size: 2.5rem;
 }
 a{
 color:#FC4F4F;
+
 }
 
 
@@ -18,6 +20,7 @@ color:#FC4F4F;
 .ps{
 font-family: 'Leckerli One', cursive;
 color:#FC4F4F;
+
 }
 .title{
 font-family: 'Suez One', serif;
@@ -105,7 +108,11 @@ border:none;
 padding:4rem 2 10rem 0;
 
 }
-
+.card-title,
+.card-text{
+text-align:center;
+color:black;
+}
 .darkmode{
 background:#575757;
 }
@@ -252,6 +259,8 @@ color:inherit;
 }
 .index_social_name{
 color:#FC4F4F;
+height: 1px;
+
 font-size:1.5rem;
 padding-bottom:20%;
 display:inline-block;
@@ -275,13 +284,18 @@ font-size:1.5rem;
 display:inline-block;
 color:#black;
 padding-bottom:20%;
+
 }
 .social_row{
 text-align:center;
+
 }
+
+
 .copyright{
 font-size:1rem;
 }
+
 
 
 
@@ -315,15 +329,21 @@ transform:tranlateY(0px);
 
 
 @media (max-width:780px){
+
 .ppic{
+filter:drop-shadow(-5px 6px 10px black)
 margin-left:4%;
 text-align:center;
 float:none;
+font-size:120px;
 }
 .name{
 text-align:center;
 
 
+}
+.title{
+font-size:1rem;
 }
 .subtitle{
 text-align:center;

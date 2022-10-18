@@ -68,7 +68,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             {% for each in homepage_gallery %}
 
-
+            <a href={{each["link"]}} style="text-decoration:none">
             <div class="col">
                 <div class="card" onclick="" onmouseover="" onmouseout="">
                     <img src={{each["link"]}} class="card-img-top esha_image" alt="...">
@@ -78,6 +78,7 @@
                     </div>
                 </div>
             </div>
+                </a>
             {% endfor %}
 
         </div>
@@ -123,16 +124,17 @@
             </button>
         </div>
     </div>
+
 </section>
 <section class="contact darkmode-section" id="footer_id">
     <div class="container container-lg-12 container-sm-12 container-md-12">
         <div class="container container-lg-12 container-sm-12 container-md-12 social_footer ">
             <h1 class="contact_title">Contact Me</h1>
             <div class="row  row-cols-2 row-cols-lg-4 gx-4 g-lg-4 align-items-start social_row">
-                <div class="col">
+                <div class="col linkden">
                     <a class="social" href="https://www.linkedin.com/in/poornesh-shiva-9529a0215/"> <i
                             class="fa fa-brands fa-linkedin fa-3x "></i></a><br>
-                    <p class="index_social_name">Linkedin</p>
+                    <p class="index_social_name ">Linkedin</p>
                 </div>
                 <div class="col">
                     <a class="social" href="https://github.com/PoorneshShiva"><i
@@ -153,7 +155,7 @@
 
             </div>
 
-            <p class="copyright">© Copyright 2021 PsPortfolio</p>
+            <p class="copyright">© Copyright 2022 PsPortfolio</p>
         </div>
     </div>
 
