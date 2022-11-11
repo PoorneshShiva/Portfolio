@@ -1,11 +1,11 @@
 homepage_gallery = [{"link": "static/images/Photography_of_mine.jpg", "Heading": "Capturing Photo",
                      "Paragraph": "Esha in Coimbatore,India"},
                     {"link": "static/images/lijo-joseph-saSAJ3zoTCI-unsplash.jpg", "Heading": "Hands on the Piano!",
-                     "Paragraph": "I will Update Mine Soon!"},
+                     "Paragraph": "Playing Relaxing Music!"},
                     {"link": "https://images.unsplash.com/photo-1665486878603-f33153f45206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=657&q=80", "Heading": "Capturing Video",
                      "Paragraph": "Capturing Video for a short movie."},
-                    {"link": "static/images/computer.jpg", "Heading": "Hands on my Computer!",
-                     "Paragraph": "I will Update Mine Soon!"}]
+                    {"link": "https://images.unsplash.com/photo-1668190728753-4d2ae0a6d575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2024&q=80", "Heading": "Hands on my Computer!",
+                     "Paragraph": "Programming late night!"}]
 
 books_knowledge = [{"link": "static/images/napoleon-hill.jpg", "Heading": "Napoleon Hill",
                      "Paragraph": "Tell the World what you intend to do, but first show it.", "active": True},
